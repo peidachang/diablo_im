@@ -1,4 +1,4 @@
-# 一个基于netty实现的NIO消息通信组件
+# diablo_im
 
 ------
 
