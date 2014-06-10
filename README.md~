@@ -18,7 +18,7 @@
 ### 二 如何启动
 
 因为外部依赖了tair，所以需要一个集中式的缓存，这个版本是采用了tair。
-> 服务端启动
+>服务端启动
 ``` java
    public static void main(String[] args) throws Exception {
         LogUtils.initLogback();
@@ -27,7 +27,7 @@
 
     }
 ```
-> 客户端启动
+>客户端启动
 ``` java
 public static void main(String[] args) {
         LogUtils.initLogback();
