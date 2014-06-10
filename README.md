@@ -19,6 +19,7 @@
 
 因为外部依赖了tair，所以需要一个集中式的缓存，这个版本是采用了tair。
 >服务端启动
+
 ```java
    public static void main(String[] args) throws Exception {
         LogUtils.initLogback();
@@ -28,6 +29,7 @@
 ```
 
 >客户端启动
+
 ```java
 public static void main(String[] args) {
         LogUtils.initLogback();
@@ -40,10 +42,14 @@ public static void main(String[] args) {
         WSClientFacade.getInstance().withDefaultTairManager(new     DefaultTairManager()).send(messageVo);//DefaultTairManager为tair中代码
     }
 ```
+
+------
+
 ### 三 辅助的压力测试工具
 tsung，一个很强大的压测工具，最新版本支持对于websocket的压测
 具体的使用：[使用介绍](http://www.inter12.org/archives/867)
 
+------
 
 ### 四 参考资料
 1. http://netty.io/wiki/index.html
