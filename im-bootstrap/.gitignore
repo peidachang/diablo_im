@@ -1,0 +1,6 @@
+/target
+/bin
+/file.log
+/rolling.log
+*.classpath
+*.project
