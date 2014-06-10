@@ -18,17 +18,17 @@
 ### 二 如何启动
 
 因为外部依赖了tair，所以需要一个集中式的缓存，这个版本是采用了tair。
-> 服务端启动
-``` java
+>服务端启动
+```java
    public static void main(String[] args) throws Exception {
         LogUtils.initLogback();
         ServerFacade wsServerFacade = new ServerFacade();
         wsServerFacade.init();
-
     }
 ```
-> 客户端启动
-``` java
+
+>客户端启动
+```java
 public static void main(String[] args) {
         LogUtils.initLogback();
 
@@ -37,9 +37,7 @@ public static void main(String[] args) {
         messageVo.setFromUserId("13588701563");
         messageVo.setToUserId("13588701564");
         messageVo.setMsg("hehe11");
-
         WSClientFacade.getInstance().withDefaultTairManager(new     DefaultTairManager()).send(messageVo);//DefaultTairManager为tair中代码
-
     }
 ```
 ### 三 辅助的压力测试工具
@@ -48,7 +46,7 @@ tsung，一个很强大的压测工具，最新版本支持对于websocket的压
 
 
 ### 四 参考资料
-[1]: http://netty.io/wiki/index.html
+1. http://netty.io/wiki/index.html
 
 
 
